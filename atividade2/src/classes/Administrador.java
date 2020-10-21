@@ -19,7 +19,7 @@ public class Administrador extends Empregado {
 
 	//calcular salario do administrador
 	public double calcularSalarioAdm() {
-		return ajudaCusto + getSalario();
+		return getAjudaCusto() + getSalario();
 	}
 
 	@Override

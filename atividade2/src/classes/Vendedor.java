@@ -27,10 +27,13 @@ public class Vendedor extends Empregado {
 	public void setComissao(double comissao) {
 		this.comissao = comissao;
 	}
+	public double comissao() {
+		return getComissao() * getValorVendas();
+	}
 
 	//caucular salario do vendedor
 	public double calcularSalarioVend() {
-		return getSalario() + (comissao * valorVendas);
+		return getSalario() + comissao();
 	}
 
 	@Override
