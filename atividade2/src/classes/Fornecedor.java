@@ -11,10 +11,6 @@ public class Fornecedor extends Pessoa {
 		valorDivida = f_valorDivida;
 	}
 
-	public void valorDivida() {
-
-	}
-
 	public double getValorCredito() {
 		return valorCredito;
 	}
